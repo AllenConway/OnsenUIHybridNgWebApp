@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Hello Modern Apps Live! Orlando';
+  title = 'Hello VSLive! New Orleans';
   checkbox1 = 'OnsenUI';
   checkbox2 = 'PhoneGap';
 
