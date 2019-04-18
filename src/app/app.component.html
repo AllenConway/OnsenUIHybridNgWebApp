@@ -1,0 +1,69 @@
+<!--root component of each page. The content inside page component is scrollable -->
+<!-- ons-page is a container that fully covers the viewport (usually a screen) -->
+<ons-page>
+
+  <ons-toolbar>
+    <div class="center">{{title}}</div>
+  </ons-toolbar>
+
+  <p class="margin-top-10">
+    <ons-search-input placeholder="Search"></ons-search-input>
+  </p>
+
+  <div class="margin-top-30">
+    <p>
+      <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>
+    </p>
+    <p>
+      <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+    </p>
+    <p class="margin-top-30">
+      <!-- <input type="button" onclick="login()" value="Sign in" /> -->
+      <!-- <ons-button onclick="login()">Sign in</ons-button> -->
+      <!--Angular event binding-->
+      <ons-button (click)="login()">Sign in</ons-button>
+    </p>
+  </div>
+
+  <ons-list>
+    <ons-list-header>Checkboxes</ons-list-header>
+    <ons-list-item tappable>
+      <label class="left">
+        <ons-checkbox input-id="check-1"></ons-checkbox>
+      </label>
+      <label for="check-1" class="center">
+        {{checkbox1}}
+      </label>
+    </ons-list-item>
+    <ons-list-item tappable>
+      <label class="left">
+        <ons-checkbox input-id="check-2"></ons-checkbox>
+      </label>
+      <label for="check-2" class="center">
+        {{checkbox2}}
+      </label>
+    </ons-list-item>
+  </ons-list>
+
+  <ons-list>
+    <ons-list-header>Radio buttons</ons-list-header>
+    <ons-list-item tappable>
+      <label class="left">
+        <ons-radio name="color" input-id="radio-1" checked></ons-radio>
+      </label>
+      <label for="radio-1" class="center">
+        Hybrid Web
+      </label>
+    </ons-list-item>
+    <ons-list-item tappable>
+      <label class="left">
+        <ons-radio name="color" input-id="radio-2"></ons-radio>
+      </label>
+      <label for="radio-2" class="center">
+        Native Applications
+      </label>
+    </ons-list-item>
+  </ons-list>
+  <br>
+  <ons-button id="onsButtonTest">Click me!</ons-button>
+</ons-page>
